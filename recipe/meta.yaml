@@ -1,8 +1,8 @@
 {% set name = "trio_asyncio" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.5" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "0b85aece9250c5db73c22f3a55ed5cd00facdf741d7b672935c1ca88e83f9436" %}
+{% set hash_value = "fd131c3c72b2eb51f5eb98075a34a85dfe1a7acc61ea24bcf5757a2187f0ff6f" %}
 
 package:
   name: '{{ name|lower }}'
