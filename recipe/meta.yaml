@@ -26,9 +26,11 @@ requirements:
     - setuptools
   run:
     - python 3.6.*
-    - trio
+    - trio >=0.5.0
     - async_generator >=1.6
-    - contextvars >=2.1
+    - contextvars >=2.1  # [py<37]
+    - outcome
+
 
 test:
   imports:
