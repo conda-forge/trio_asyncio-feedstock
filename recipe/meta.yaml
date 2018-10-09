@@ -14,17 +14,18 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 1001
+  skip: True  # [py<36]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python 3.6.*
+    - python
     - pip
     - pytest-runner
     - setuptools
   run:
-    - python 3.6.*
+    - python
     - trio >=0.5.0
     - async_generator >=1.6
     - contextvars >=2.1  # [py<37]
