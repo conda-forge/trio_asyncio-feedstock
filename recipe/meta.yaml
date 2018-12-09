@@ -1,8 +1,8 @@
 {% set name = "trio_asyncio" %}
-{% set version = "0.9.1" %}
+{% set version = "0.10.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "d62684057bc74bd0e225ed1330a6a7f756351a96e031b3cb1a320a043516a6cb" %}
+{% set hash_value = "1d6ae1d240a8cd89dc0986c23f117bf24851e7e7b47a3d5904360e4c39e98c28" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1001
+  number: 1000
   skip: True  # [py<36]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
