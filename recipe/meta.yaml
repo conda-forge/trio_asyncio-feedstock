@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - python
-    - pip
+    - pip >=18.1
     - pytest-runner
     - setuptools
   run:
