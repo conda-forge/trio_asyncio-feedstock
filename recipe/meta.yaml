@@ -21,6 +21,7 @@ build:
 requirements:
   host:
     - python
+    - conda-forge::click
     - pip
     - pytest-runner
     - setuptools
