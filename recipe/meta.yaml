@@ -30,7 +30,6 @@ requirements:
     - async_generator >=1.6
     - contextvars >=2.1  # [py<37]
     - outcome
-    - setuptools
 
 test:
   imports:
