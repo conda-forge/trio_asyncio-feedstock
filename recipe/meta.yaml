@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - conda-forge::click=7.0=py_0
     - pytest-runner
     - setuptools
   run:
