@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 1002
   skip: True  # [py<36]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -22,7 +22,6 @@ requirements:
   host:
     - python
     - pip
-    - conda-forge::click=7.0=py_0
     - pytest-runner
     - setuptools
   run:
