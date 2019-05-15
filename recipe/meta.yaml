@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1002
+  number: 1003
   skip: True  # [py<36]
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt"
 
