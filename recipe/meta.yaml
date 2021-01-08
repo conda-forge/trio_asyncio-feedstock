@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   skip: true  # [py<36]
-  script: {{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
